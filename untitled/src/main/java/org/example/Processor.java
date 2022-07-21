@@ -22,5 +22,9 @@ public class Processor {
      */
     public void process() {
         // TODO
+        String text = textInputService.getText();
+        statisticsOutputService.save(textStatisticsService.getStatistics(text)); 
+        System.out.println("JSON file is processed in the directory!");
     }
+    
 }
